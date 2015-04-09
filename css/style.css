@@ -67,20 +67,15 @@ ul li {
     padding-right: 10px;
 }
 
-.wrapper {
-    z-index:600;
-    position:relative;
-}
-
 .pattern {
     background-image:url(../images/pattern.png);
     background-repeat: repeat;
-    background-attachment:scroll;
-    width:100%;
-    height:100%;
+    background-attachment: scroll;
+    width: 100%;
+    height: 100%;
     position:absolute;
-    top:0;
-    left:0;
+    top: 0;
+    left: 0;
     margin: 0;
 }
 
@@ -205,6 +200,7 @@ a.big-background-btn {
 
 #index-section {
   margin: 0 auto;
+  width: 100%;
   background: #fff;
   padding-top: 40px;
   padding-bottom: 40px;
@@ -262,6 +258,7 @@ a.big-background-btn {
 
 #artist-section {
   margin: 0 auto;
+  width: 100%;
   background: #fff;
   padding-top: 40px;
   padding-bottom: 40px;
@@ -322,8 +319,11 @@ footer {
   width: 100%;
   height: 140px;
   background: #7EC0EE;
+  text-align: center;
 }
 
 footer h3 {
   color: #2a2a2a;
+  margin-top: 60px;
 }
+
