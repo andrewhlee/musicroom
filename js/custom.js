@@ -28,6 +28,8 @@
             //jQuery will add the default background to the preferred class 
             $('.big-background').addClass(
                 'big-background-default-image');
+            var audio = new Audio('../sounds/sound1.mp3');
+            audio.play();
         }
     });
 
