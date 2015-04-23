@@ -50,6 +50,17 @@
 			</div>
 		</footer>
 
+		<script>
+			(function($) {
+    			$(document).ready(function() {
+    				if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+  					// tasks to do if it is a Mobile Device
+  						alert("Mobile Detected");
+ 
+					}
+    		})(jQuery);
+		</script>
+
 		<script src="js/jquery-1.11.1.min.js"></script>
 		<script src="js/howler.js"></script>
     	<script src="js/device.min.js"></script>
