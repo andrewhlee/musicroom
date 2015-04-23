@@ -9,11 +9,6 @@
         } else {
             //jQuery will add the default background to the preferred class 
             $('.big-background').addClass('big-background-default-image');
-            var sound = new Howl ({
-                url:['sound1.mp3','sound1.aac'],
-                autoplay: true,
-                loop: true,
-            });
         }
     });
 

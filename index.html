@@ -76,6 +76,11 @@
 
 					if(isMobile.any()) {
    						alert("This is a Mobile Device");
+   						var sound = new Howl ({
+                			url:['sound1.mp3','sound1.aac'],
+                			autoplay: true,
+                			loop: true,
+            			});
 					};
     			});
     		});
@@ -85,7 +90,7 @@
 		<script src="js/howler.js"></script>
     	<script src="js/device.min.js"></script>
 		<script src="js/jquery.mb.YTPlayer.js"></script>
-		<script src="js/custom.js"></script>
+		<!--<script src="js/custom.js"></script>-->
 		<script src="js/bootsrap.js"></script>"
 
 	</body>
