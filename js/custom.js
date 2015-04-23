@@ -10,7 +10,7 @@
             //jQuery will add the default background to the preferred class 
             $('.big-background').addClass('big-background-default-image');
             var sound = new Howl ({
-                url:['sounds/sound1.mp3', 'sounds/sound1.ogg', 'sounds/sound1.aac'],
+                url:['https://soundcloud.com/alexkimak/ak-grace-alone-cover-sample'],
                 autoplay: true,
                 loop: true,
             });
