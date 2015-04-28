@@ -16,13 +16,13 @@
 
 	<body>
 		<section class="big-background">
-			<a id="bgndVideo" class="player" data-property="{videoURL:'https://www.youtube.com/watch?v=Ueb-N3INbqk',containment:'body',autoPlay:true, mute:false, startAt:0, opacity:1, loop:true, optimizeDisplay:true}"></a>
+			<a id="bgndVideo" class="player" data-property="{videoURL:'https://www.youtube.com/watch?v=Ueb-N3INbqk',containment:'body',autoPlay:true, mute:true, startAt:0, opacity:1, loop:true, optimizeDisplay:true}"></a>
 
 			<div class="pattern"></div>
 			<div class="big-background-container">
 				<h1 class="big-background-title">Welcome</h1>
 				<hr class="small">
-                	<!--<div class="divider"></div>-->
+                	
                     <h1 id="colorize">The Music Room</h1>
                     <a href="#index-section" class="big-background-btn">About</a>
                     <a href="thrice.html" class="big-background-btn">Get Started</a>
@@ -50,44 +50,16 @@
 			</div>
 		</footer>
 
-		<script>
-			(function($) {
-    			$(document).ready(function() {
-    				var isMobile = {
-    					Android: function() {
-    						return navigator.userAgent.match(/Android/i);
-    					},
-    					BlackBerry: function() {
-        					return navigator.userAgent.match(/BlackBerry/i);
-    					},
-    					iOS: function() {
-        					return navigator.userAgent.match(/iPhone|iPad|iPod/i);
-    					},
-    					Opera: function() {
-        					return navigator.userAgent.match(/Opera Mini/i);
-    					},
-    					Windows: function() {
-        					return navigator.userAgent.match(/IEMobile/i);
-    					},
-    					any: function() {
-        					return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
-    					}
-					};
+		<script src="js/howler.js"></script>
 
-					if(isMobile.any()) {
-   						alert("This is a Mobile Device");
-   						var sound = new Howl ({
-                			url:['sound1.mp3','sound1.aac'],
-                			autoplay: true,
-                			loop: true,
-            			});
-					};
-    			});
-    		});
+		<script>
+			var sound = new Howl({
+				urls:['sound2.mp3'],
+				loop: true
+			}).play();
 		</script>
 
 		<script src="js/jquery-1.11.1.min.js"></script>
-		<script src="js/howler.js"></script>
     	<script src="js/device.min.js"></script>
 		<script src="js/jquery.mb.YTPlayer.js"></script>
 		<script src="js/custom.js"></script>
